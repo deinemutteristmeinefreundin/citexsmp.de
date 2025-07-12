@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leitung-Team</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+  <link rel="stylesheet" href="high-team.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: #1f1f1f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #00bcd4;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 40px;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .link {
+      color: #ccc;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .link:hover,
+    .link.active {
+      background-color: #00bcd4;
+      color: #000;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #00bcd4;
+      user-select: none;
+    }
+
+    .team-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+
+    .team-card {
+      background-color: #333;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      cursor: default;
+    }
+
+    .team-card:hover {
+      transform: scale(1.05);
+      background-color: #444;
+    }
+
+    .team-skin {
+      width: 120px;
+      height: 180px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-name {
+      font-weight: 600;
+      color: #eee;
+      margin: 0;
+    }
+
+    .rank-list {
+      margin-top: 3rem;
+      text-align: center;
+      user-select: none;
+    }
+
+    .rank-list h3 {
+      color: #00bcd4;
+      margin-bottom: 1rem;
+    }
+
+    .rank-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 900px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      color: #ccc;
+    }
+
+    .rank-list ul li {
+      background-color: #2a2a2a;
+      border-radius: 6px;
+      font-weight: 600;
+      user-select: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .rank-list ul li a {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .rank-list ul li a:hover {
+      background-color: #00bcd4;
+      color: #000;
+    }
+
+    @media (max-width: 600px) {
+      .team-skin {
+        width: 90px;
+        height: 135px;
+      }
+
+      .team-card {
+        width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Server logo" class="logo-img">
+      <span class="server-name">StarSMP</span>
+    </a>
+
+    <div class="links">
+      <a href="index.html" class="link">Home</a>
+      <a href="rules.html" class="link">Rules</a>
+      <a href="admin-team-Owner.html" class="link active">High-Team</a>
+      <a href="contact.html" class="link">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="team-section">
+      <h2 class="section-title">Leitung</h2>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="images/skins/Leitung1.png" alt="Skin von NIKST4R" class="team-skin" />
+          <p class="team-name">NIKST4R</p>
+        </div>
+        <div class="team-card">
+          <img src="images/skins/Leitung2.png" alt="Skin von Philiox" class="team-skin" />
+          <p class="team-name">Philiox</p>
+        </div>
+      </div>
+
+      <div class="rank-list">
+        <h3>Ränge</h3>
+        <ul>
+          <li><a href="admin-team-Owner.html">Owner</a></li>
+          <li><a href="admin-team-CEO.html">CEO</a></li>
+          <li><a href="admin-team-Manager.html">Manager</a></li>
+          <li><a href="admin-team-Leitung.html" class="active">Leitung</a></li>
+          <li><a href="admin-team-SRAdmin.html">Sr.Admin</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:1rem; background:#1f1f1f; color:#aaa; user-select:none;">
+      © 2025 StarSMP. Alle Rechte vorbehalten.
+    </p>
+  </footer>
+</body>
+</html>
